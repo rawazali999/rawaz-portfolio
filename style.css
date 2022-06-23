@@ -1,72 +1,104 @@
 body {
-    font-family:  Trebuchet MS;
-    background-color: #D8E3E7;
-  }
-  img{
-      width: 200px;
-      height: auto;
-  }
-  
-  .sidenav{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #51C4D3;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #132C33;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav div a:hover {
-    background-color: #132C33;
-    color: #f1f1f1;
-  }
-  .sidenav  a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav div a {font-size: 18px;}
+  font-family: Trebuchet MS;
+  background-color: #D8E3E7;
+
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #132C33;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow-y: scroll;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav div a:hover {
+  background-color: #3BACB6;
+  color: #f1f1f1;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.profile {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f1f1f1;
+}
+
+
+.profile img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+
+}
+
+.content {
+  transition: 0.5s;
+  margin-left: 10px;
+
+}
+
+.nav {
+  background-color: #132C33;
+  width: 100%;
+  display: none;
+  position: fixed;
+  font-size: small;
+
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
 
-  .profile{
-    margin: 20px;
+  .sidenav div a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    position: fixed;
   }
 
-  .profile img{
-    width: 150px; 
-    height: auto ;
-    background-color: #D8E3E7; 
-    margin-bottom:10px;
-    
+  .open {
+    display: none;
   }
+}
