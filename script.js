@@ -7,3 +7,5 @@ function closeSideNav() {
   document.getElementById("mySidenav").style.width = "0";
 
 }
+
+

@@ -10,17 +10,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="skills.scss">
   <title>Rawaz Ali</title>
 </head>
 
 <body>
-  <!-- mobile and ipad screen navbar  -->
-
   
 
   
 
+  
 
+<!-- sidebar start -->
   <aside id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
     <!-- profile card -->
@@ -38,20 +39,21 @@
     <!-- sidebar links  -->
     <div>
       <a href="#about"><i class="bi bi-file-person-fill"></i></i> About</a>
-      <a href="#"><i class="bi bi-stars"></i> Skills</a>
+      <a href="#skills"><i class="bi bi-stars"></i> Skills</a>
       <a href="#"><i class="bi bi-file-earmark-code"></i> Projects</a>
       <a href="#"><i class="bi bi-envelope"></i> Contact</a>
     </div>
   </aside>
+  <!-- side bar ends -->
 
 
-
-  <main id="content" class="content" style="margin-top: 15px;">
+<!-- main contents start -->
+  <main id="content" class="content">
     
     <span id="open" style="font-size: 20px; cursor: pointer ;" onclick="openSideNav()">&#9776; open</span>
     <!-- about section start -->
-    <section id="about w-auto">
-      <div class="container mx-lg-auto m-1 w-auto p-3 d-flex align-items-center justify-content-between">
+    <section id="about">
+      <div class="container w-auto mx-lg-auto m-1 my-5 p-3 d-flex align-items-center justify-content-between">
         <div class="row p-2 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-4 border shadow-lg w-auto">
           <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
             <div class="lc-block mb-3">
@@ -90,8 +92,76 @@
       </div>
     </section>
     <!-- about section ends -->
+     
+    <!-- skill section start -->
+    <section id="skills" >
+        <div class="container w-100 mx-lg-auto m-1 p-3 my-5 mt-lg-1 ">
+        
+              <div class="skill-bars">
+                <div class="fw-bold display-6 darkGreen text-center">
+                  Skills
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg> HTML</span>
+                  </div>
+                  <div class="progress-line html">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg> CSS</span>
+                  </div>
+                  <div class="progress-line css">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span><svg xmlns="http://www.w3.org/2000/svg"  height="25" width="25" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg> javaScript</span>
+                  </div>
+                  <div class="progress-line javacript">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 384 512"><path d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z"/></svg> Java</span>
+                  </div>
+                  <div class="progress-line java">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512"><path d="M448 80V128C448 172.2 347.7 208 224 208C100.3 208 0 172.2 0 128V80C0 35.82 100.3 0 224 0C347.7 0 448 35.82 448 80zM393.2 214.7C413.1 207.3 433.1 197.8 448 186.1V288C448 332.2 347.7 368 224 368C100.3 368 0 332.2 0 288V186.1C14.93 197.8 34.02 207.3 54.85 214.7C99.66 230.7 159.5 240 224 240C288.5 240 348.3 230.7 393.2 214.7V214.7zM54.85 374.7C99.66 390.7 159.5 400 224 400C288.5 400 348.3 390.7 393.2 374.7C413.1 367.3 433.1 357.8 448 346.1V432C448 476.2 347.7 512 224 512C100.3 512 0 476.2 0 432V346.1C14.93 357.8 34.02 367.3 54.85 374.7z"/></svg> MySQL</span>
+                  </div>
+                  <div class="progress-line mysql">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 640 512"><path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"/></svg> PHP</span>
+                  </div>
+                  <div class="progress-line php">
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+    </section>
+
+    <!-- skill section end -->
+
+
+
 
   </main>
+<!-- main content ends -->
+
   <script src="script.js"></script>
 </body>
 
