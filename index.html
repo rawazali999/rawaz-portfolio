@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
@@ -13,93 +14,82 @@
 </head>
 
 <body>
-  <!-- mobile and ipad navbar  -->
+  <!-- mobile and ipad screen navbar  -->
 
-  <nav class="nav justify-content-sm-center">
-    <li class="nav-item">
-      <a class="nav-link link-light" href="#">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-light" href="#">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-light" href="#">Skills</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-light" href="#">Contacts</a>
-    </li>
-  </nav>
+  
+
+  
 
 
   <aside id="mySidenav" class="sidenav">
-    <!-- sidebar close button -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
     <!-- profile card -->
     <div class="profile">
 
-      <img src="images/photo_2022-06-22_16-45-07.jpg" class="rounded-4 img-fluid hover-shadow" alt="Avatar" />
+      <img src="images/sidebar-profile-image.jpg" class="rounded-4 img-fluid hover-shadow" alt="Avatar" />
 
       <h5 class="mb-2"><strong>Rawaz Ali</strong></h5>
       <p style="color: #f1f1f1;">Front-end Web Developer</p>
+
 
     </div>
     <!-- profile card end  -->
 
     <!-- sidebar links  -->
     <div>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Skills</a>
-      <a href="#">Contact</a>
+      <a href="#about"><i class="bi bi-file-person-fill"></i></i> About</a>
+      <a href="#"><i class="bi bi-stars"></i> Skills</a>
+      <a href="#"><i class="bi bi-file-earmark-code"></i> Projects</a>
+      <a href="#"><i class="bi bi-envelope"></i> Contact</a>
     </div>
   </aside>
 
 
 
-  <main id="content" class="content">
+  <main id="content" class="content" style="margin-top: 15px;">
+    
+    <span id="open" style="font-size: 20px; cursor: pointer ;" onclick="openSideNav()">&#9776; open</span>
+    <!-- about section start -->
+    <section id="about w-auto">
+      <div class="container mx-lg-auto m-1 w-auto p-3 d-flex align-items-center justify-content-between">
+        <div class="row p-2 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-4 border shadow-lg w-auto">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <div class="lc-block mb-3">
+              <div editable="rich">
+                <h2 class="fw-bold display-5 darkGreen">Hi, I'm Rawaz Ali</h2>
+              </div>
+            </div>
 
-    <!-- sidebar open button -->
-    <span id="open" class="open" style="font-size: 20px; cursor: pointer" onclick="openSideNav()">&#9776; open</span>
+            <div class="lc-block mb-3">
+              <div editable="rich">
+                <p class="lead lead-font-size darkGreen">My name is Rawaz and i'm 21 years old, i'm Front-end Web Developer and
+                  Software Engineering student at Salahaddin University.
+                </p>
+              </div>
+            </div>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
+            
+              <a class="btn btn-outline-primary" width="%20" href="https://github.com/rawazali999">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                  </path>
+                </svg>
+                View Github
+              </a>
+            
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
+          </div>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cum voluptatem nihil dolorem provident aperiam
-      omnis quis ut distinctio voluptatum quod unde rem doloremque enim nesciunt, magni officia velit perferendis.</p>
+          <div class="col-lg-4  offset-lg-1 p-0  rounded-4 overflow-hidden shadow-lg w-auto " >
+              <img class="rounded-start img-fluid" src="images/photo_2022-06-22_16-45-07.jpg" width="350px">
+          </div>
 
+        </div>
+      </div>
+    </section>
+    <!-- about section ends -->
 
   </main>
   <script src="script.js"></script>

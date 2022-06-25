@@ -1,17 +1,18 @@
 body {
   font-family: Trebuchet MS;
-  background-color: #D8E3E7;
-
 }
-
-img {
+aside img {
   width: 200px;
   height: auto;
 }
 
+.darkGreen{
+  color:#132C33
+}
+
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 0px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -20,7 +21,6 @@ img {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  overflow-y: scroll;
 }
 
 .sidenav a {
@@ -29,7 +29,7 @@ img {
   font-size: 20px;
   color: #f1f1f1;
   display: block;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .sidenav div a:hover {
@@ -37,9 +37,6 @@ img {
   color: #f1f1f1;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
 
 .sidenav .closebtn {
   position: absolute;
@@ -56,6 +53,7 @@ img {
   flex-direction: column;
   align-items: center;
   color: #f1f1f1;
+  transition: 0.5s;
 }
 
 
@@ -63,42 +61,24 @@ img {
   width: 150px;
   height: auto;
   margin-bottom: 10px;
+  transition: 0.5s;
+
 
 }
 
 .content {
   transition: 0.5s;
-  margin-left: 10px;
-
-}
-
-.nav {
-  background-color: #132C33;
-  width: 100%;
-  display: none;
-  position: fixed;
-  font-size: small;
-
 }
 
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
 
-  .sidenav div a {
-    font-size: 18px;
-  }
+
+
+@media only screen and (max-width: 600px) {
+  
+  
 }
 
-@media only screen and (max-width: 450px) {
-  .nav {
-    display: flex;
-    position: fixed;
-  }
 
-  .open {
-    display: none;
-  }
-}
+/* today css start here */
+
