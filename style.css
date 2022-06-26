@@ -1,6 +1,18 @@
 body {
   font-family: Trebuchet MS;
   place-items: center;
+  padding-top: 50px;
+}
+hr{
+  
+}
+#header{
+  transition: 0.5s;
+  background-color: #132C33;
+}
+
+#open{
+  transition: 0.5s;
 }
 aside img {
   width: 200px;
@@ -78,14 +90,16 @@ aside img {
 }
 
 
-/* today css start here */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* skills section css starts */
 
 
-::selection{
+::selection{ 
+  /* when selecting some text */
   color: #fff;
-  background: #6665ee;
+  background: #1d445b;
 }
+
+
 .skill-bars{
   padding: 25px 30px;
   width: auto;
@@ -147,9 +161,9 @@ aside img {
   width: 70%;
   background: rgb(0, 166, 255);
 }
-.bar .progress-line.javacript span{
+.bar .progress-line.javascript span{
   width: 50%;
-  background: rgb(255, 255, 102);
+  background: rgb(255, 221, 1);
 }
 .bar .progress-line.java span{
   width: 60%;
@@ -201,7 +215,7 @@ aside img {
 .progress-line.css span::after{
   content: "50%";
 }
-.progress-line.progress-line.javacript span::after{
+.progress-line.progress-line.javascript span::after{
   content: "50%";
 }
 .progress-line.java span::after{
@@ -213,4 +227,6 @@ aside img {
 .progress-line.php span::after{
   content: "30%";
 }
+
+/* skill section css ends */
 
