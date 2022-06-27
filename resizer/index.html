@@ -14,40 +14,51 @@
 <link rel="stylesheet" href="style.css" />
 
 <body>
-    <div id="header" class="text-white  shadow-sm p-3 mb-5 d-flex fixed-top">
+    <div id="header" class="text-white  shadow-sm p-2 mb-4 d-flex fixed-top">
         <a href="../index.html">
             <i class="bi bi-arrow-left align-items-start fs-4 text-white"></i></a>
         <div class="mx-auto fs-4 ">Unsplash Image Resizer</div>
     </div>
 
-    <div class="container w-75 mx-lg-auto my-5  p-3 d-flex align-items-center justify-content-around">
+    <div class="container w-75 mx-lg-auto my-5  p-3 d-flex align-items-center flex-column justify-content-around">
 
-        <div class="row p-2 pt-0 pe-lg-3 pt-lg-3  justify-content-between rounded-4  shadow-lg w-auto">
+        <div class="row p-2 pt-0 pe-lg-3 pt-lg-3  justify-content-between rounded-4  shadow-lg ">
 
 
             <div class=" text-center">Resize Unsplash Image Here </div>
 
             <div class="form-group my-2">
                 <label for="exampleInputEmail1">Unsplash Image URL</label>
-                <input type="url" class="form-control my-1" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="url" class="form-control my-1" id="url" 
                     placeholder="Paste Image URL here">
             </div>
             <div class="form-group my-2">
                 <label for="exampleInputPassword1">Width</label>
-                <input type="number" class="form-control    my-1" id="exampleInputPassword1"
+                <input type="number" class="form-control   my-1" id="width"
                     placeholder="Write Width in Pixels">
             </div>
             <div class="form-group my-2">
                 <label for="exampleInputPassword1">Height</label>
-                <input type="number" class="form-control my-1" id="exampleInputPassword1"
+                <input type="number" class="form-control my-1" id="height"
                     placeholder="Write Height in Pixels ">
             </div>
 
-            <button type="submit" class="btn btn-primary w-25  bi-crop  fs-5 mx-auto"> Resize</button>
-        </div>
-    </div>
+            <a  onclick="resize();"  class="btn btn-primary bi-crop  fs-5 mx-auto" style="width: 110px ;"> Resize</a>
+             
 
-    <script src="script.js"></script>
+            
+        </div>
+        
+    </div>
+    <div class=" d-flex flex-column align-items-center w-auto">
+
+        <img id="generatedImage"  src="" >
+         <div class="m-1 border-primary">
+         <span id="new-url" onclick="handleCopy();" ></span>
+        </div>
+       
+       </div>
+      <script src="script.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,7 @@ hr{
 }
 #header{
   transition: 0.5s;
-  background-color: #132C33;
+  background-color: #193d46;
 }
 
 #open{
@@ -68,7 +68,7 @@ aside img {
 /* social media links ends */
 
 .darkGreen{
-  color:#132C33
+  color:#1b434e
 }
 
 .sidenav {
@@ -78,7 +78,7 @@ aside img {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #132C33;
+  background-color: #193d46;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;

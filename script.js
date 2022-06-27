@@ -10,7 +10,8 @@ function closeSideNav() {
   document.getElementById("header").style.marginLeft = "0px";
   document.getElementById("open").style.display = "block";
 
-
 }
+
+
 
 
