@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unsplash image Resizer</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+<link rel="stylesheet" href="style.css" />
+
+<body>
+    <div id="header" class="text-white  shadow-sm p-3 mb-5 d-flex fixed-top">
+        <a href="../index.html">
+            <i class="bi bi-arrow-left align-items-start fs-4 text-white"></i></a>
+        <div class="mx-auto fs-4 ">Unsplash Image Resizer</div>
+    </div>
+
+    <div class="container w-75 mx-lg-auto my-5  p-3 d-flex align-items-center justify-content-around">
+
+        <div class="row p-2 pt-0 pe-lg-3 pt-lg-3  justify-content-between rounded-4  shadow-lg w-auto">
+
+
+            <div class=" text-center">Resize Unsplash Image Here </div>
+
+            <div class="form-group my-2">
+                <label for="exampleInputEmail1">Unsplash Image URL</label>
+                <input type="url" class="form-control my-1" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Paste Image URL here">
+            </div>
+            <div class="form-group my-2">
+                <label for="exampleInputPassword1">Width</label>
+                <input type="number" class="form-control    my-1" id="exampleInputPassword1"
+                    placeholder="Write Width in Pixels">
+            </div>
+            <div class="form-group my-2">
+                <label for="exampleInputPassword1">Height</label>
+                <input type="number" class="form-control my-1" id="exampleInputPassword1"
+                    placeholder="Write Height in Pixels ">
+            </div>
+
+            <button type="submit" class="btn btn-primary w-25  bi-crop  fs-5 mx-auto"> Resize</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
